@@ -4,7 +4,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name = "e_commerce"
+project_name = "time_series"
 
 
 list_of_files = [

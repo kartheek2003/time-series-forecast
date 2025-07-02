@@ -1,0 +1,20 @@
+# Ignore artifacts
+artifacts/
+
+# Ignore logs
+logs/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# OS-generated files
+.DS_Store
+Thumbs.db
