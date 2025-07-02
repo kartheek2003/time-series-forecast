@@ -18,3 +18,12 @@ __pycache__/
 # OS-generated files
 .DS_Store
 Thumbs.db
+
+venv/
+__pycache__/
+*.pyc
+*.pkl
+*.h5
+*.csv
+
+
