@@ -1,6 +1,6 @@
 from src.time_series.constants import *
 from src.time_series.utils.common import create_directories , read_yaml
-from src.time_series.entity.config_entity import DataIngestionconfig,EDA
+from src.time_series.entity.config_entity import DataIngestionconfig,EDA,Model
 
 
 
@@ -21,4 +21,9 @@ class ConfigurationManager:
         eda_config = EDA(data_path= config.data_path,report_path=config.report_path,data_output=config.data_output)
         
         return eda_config
+    def get_model_config(self)->Model:
+        config = self.config.model
+        create_directories([config.report])
+        model_config = Model(data_path=config.data_path,report=config.report,model_save_path= config.model_save_path)
+        return model_config
     

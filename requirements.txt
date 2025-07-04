@@ -2,7 +2,7 @@ setuptools
 pandas
 matplotlib
 seaborn 
-numpy 
+numpy==1.24.4 
 statsmodels 
 scikit-learn
 joblib 
@@ -10,3 +10,7 @@ ensure
 python-box
 pyyaml
 requests
+pmdarima==1.8.5
+prophet
+joblib
+plotly

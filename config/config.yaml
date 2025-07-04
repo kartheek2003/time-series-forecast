@@ -10,3 +10,8 @@ EDA :
  data_path : artifacts/data_ingestion/airline.csv
  report_path : artifacts/EDA/report 
  data_output : artifacts/EDA
+
+model : 
+ data_path : artifacts/EDA/eda_data.csv
+ report : artifacts/model
+ model_save_path : artifacts/model/
