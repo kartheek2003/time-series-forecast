@@ -1,6 +1,6 @@
 from src.time_series.constants import *
 from src.time_series.utils.common import create_directories , read_yaml
-from src.time_series.entity.config_entity import DataIngestionconfig,EDA,Model
+from src.time_series.entity.config_entity import DataIngestionconfig,EDA,Model,Prediction
 
 
 
@@ -26,4 +26,7 @@ class ConfigurationManager:
         create_directories([config.report])
         model_config = Model(data_path=config.data_path,report=config.report,model_save_path= config.model_save_path)
         return model_config
-    
+    def get_prediction_config(self)-> Prediction:
+        config = self.config.prediction
+        prediction_config = Prediction(auto_arima= config.auto_arima , prophet= config.prophet)
+        return prediction_config 

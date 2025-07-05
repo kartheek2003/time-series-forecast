@@ -15,3 +15,8 @@ model :
  data_path : artifacts/EDA/eda_data.csv
  report : artifacts/model
  model_save_path : artifacts/model/
+
+prediction:
+ auto_arima : artifacts/model/auto_arima.pkl
+ prophet : artifacts/model/prophet.pkl
+ 

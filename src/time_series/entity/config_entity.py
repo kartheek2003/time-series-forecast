@@ -17,3 +17,9 @@ class Model:
     data_path : Path
     report : Path
     model_save_path : Path
+
+@dataclass 
+class Prediction:
+   auto_arima : Path
+   prophet : Path
+   
