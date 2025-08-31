@@ -37,6 +37,12 @@ Built for scalability, deployed on **AWS EC2** with **CI/CD pipelines** for seam
 
 ---
 
+###  Project Demo
+| Interface | Prediction AutoArima | Prediction Prophet |
+|-----------|-------------------|-----------------------|
+| ![Homepage](webimages/homepage_ts.png) | ![Prediction](webimages/prediction_aa.png) | ![Prediction](webimages/prediction_pp.png) |
+
+---
 ## ⚙️ Running Locally
 
 ```bash
